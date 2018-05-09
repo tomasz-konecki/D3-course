@@ -4,9 +4,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>D3 Course</title>
+  <link href="styles.css" rel="stylesheet" /> 
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-  <h2>Hello</h2>
-  <p>asdssdfsfsdfdsf</p>
+  <ul>
+    <li>This is an item</li>
+    <li>This is an item</li>
+    <li>This is an item</li>
+    <li>This is an item</li>
+    <li>This is an item</li>
+  </ul>
+
+  <script>
+    d3.select('li:nth-child(2)')
+    .style('color', 'red')
+    .text('This is an even number')
+
+    d3.selectAll('li:nth-child(odd)')
+    .style('color', 'teal')
+    .html('<code>This is an odd number</code>')
+    .classed('big', true);
+  </script>
+  
 </body>
 </html>
