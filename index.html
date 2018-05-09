@@ -8,7 +8,7 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-  <ul>
+  <ul class="items"> 
     <li>This is an item</li>
     <li>This is an item</li>
     <li>This is an item</li>
@@ -19,12 +19,19 @@
   <script>
     d3.select('li:nth-child(2)')
     .style('color', 'red')
-    .text('This is an even number')
 
     d3.selectAll('li:nth-child(odd)')
     .style('color', 'teal')
-    .html('<code>This is an odd number</code>')
     .classed('big', true);
+    
+    var numArray = [12, 20, 33, 40, 55];
+
+    d3.selectAll('.items li')
+        .data(numArray)
+        .style('font-size', function(d){
+          return d+'px';
+        })
+
   </script>
   
 </body>
