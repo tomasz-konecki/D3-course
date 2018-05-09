@@ -8,30 +8,39 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-  <ul class="items"> 
-    <li>This is an item</li>
-    <li>This is an item</li>
-    <li>This is an item</li>
-    <li>This is an item</li>
-    <li>This is an item</li>
-  </ul>
+  <h1>SVG Shapes</h1>
+  <!-- <svg width="400" height="400" style="background: #bef">
+    <rect width="300" height="300" style="fill:rgb(255, 0, 0);
+    stroke:rgb(0,0,0);stroke-width:1;" x="50" y="50"/>
+
+  </svg>
+
+  <svg width="400" height="400" style="background: #bef">
+      <circle cx="250" cy="250" r="40" stroke="black" stroke-width="1" fill="yellow" />
+  
+  </svg> -->
 
   <script>
-    d3.select('li:nth-child(2)')
-    .style('color', 'red')
+    d3.select('body')
+        .append('svg')
+            .attr('width', 400)
+            .attr('height', 400)
+            .style('background', '#cef')
+        .append('rect')
+            .attr('width', 300)
+            .attr('height', 300)
+            .attr('x', 50)
+            .attr('y', 50)
+            .style('fill', 'rgb(255,0,0)')
+            .style('stroke', 'black')
+            .style('stroke-width', '1')
 
-    d3.selectAll('li:nth-child(odd)')
-    .style('color', 'teal')
-    .classed('big', true);
-    
-    var numArray = [12, 20, 33, 40, 55];
-
-    d3.selectAll('.items li')
-        .data(numArray)
-        .style('font-size', function(d){
-          return d+'px';
-        })
-
+        d3.select('svg')
+            .append('circle')
+                .attr('cx', 100)
+                .attr('cy', 100)
+                .attr('r', 50)
+                .style('fill', 'blue')
   </script>
   
 </body>
