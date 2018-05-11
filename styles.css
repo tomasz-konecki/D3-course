@@ -1,8 +1,6 @@
 body {
 	background-color: #dde;
 }
-svg {
-	background-color: #a9d6fc;
-	margin-top: 50px;
-	box-shadow: 5px 5px 5px gray;
+.svg-container {
+	background-color: #fcb094;
 }
