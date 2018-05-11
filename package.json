@@ -1,21 +1,21 @@
 {
-	"name": "D3-course",
-	"version": "1.0.0",
-	"description": "D3 course (Traversy Media)",
-	"main": "index.js",
-	"scripts": {
-		"start": "live-server --port=5555",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/tomasz-konecki/D3-course.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/tomasz-konecki/D3-course/issues"
-	},
-	"homepage": "https://github.com/tomasz-konecki/D3-course#readme"
+  "name": "D3-course",
+  "version": "1.0.0",
+  "description": "D3 course (Traversy Media)",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=5555",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasz-konecki/D3-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasz-konecki/D3-course/issues"
+  },
+  "homepage": "https://github.com/tomasz-konecki/D3-course#readme"
 }
