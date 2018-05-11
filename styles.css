@@ -1,12 +1,6 @@
-.chart div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
+body {
+	background-color: #dde;
 }
-
 svg {
 	background-color: #a9d6fc;
 	margin-top: 50px;
