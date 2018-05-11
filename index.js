@@ -1,7 +1,7 @@
 var data = [
-    {"platform": "Android", "percentage": 40.11},
+    {"platform": "Android", "percentage": 43.25},
     {"platform": "Windows", "percentage": 36.69},
-    {"platform": "iOS", "percentage": 13.06}
+    {"platform": "iOS", "percentage": 20.06}
 ];
 
 var svgWidth = 500, svgHeight = 300, radius =  Math.min(svgWidth, svgHeight) / 2;
